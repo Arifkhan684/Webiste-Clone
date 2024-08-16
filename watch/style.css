@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+   background-image: linear-gradient(to right,#000000,#1b4937);
+    overflow-x: hidden;
+
+}
+
+header {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rbga(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    position: fixed;
+    left: 0;
+    width: 100%;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    left: 200px;
+    padding: 2%;
+}
+
+.navbar li a {
+    position: relative;
+    color: #fff;
+    margin: 0 50px;
+    font-size: 25px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    bottom: -7px;
+    transition: 0.3s;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.navbar a:hover::before {
+    transform: scaleX(1);
+}
+
+section {
+    padding: 90px 9% 17px;
+}
+
+.head-img img {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rbga(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10%;
+}
+
+.head {
+    width: 100%;
+    left: 1px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.heading h1 {
+    color: #ada9a9;
+    font-size: 140px;
+    margin-bottom: 20px;
+    font-family: "Anton SC", sans-serif;
+}
+.heading p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.heading a {
+    font-size: 20px;
+    display: inline-block;
+     color: #fff;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    transition: all 0.2s ease;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rbga(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin: 0 12px;
+    transition: all 0.3s linear;
+}
+.heading a:hover {
+    transform: scale(1.07) translateY(-5px);
+}
+.icons {
+    display: flex;
+    position: absolute;
+    bottom: 1%;
+    right: 15%;
+}
+.icons a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 30px;
+    transition: all 0.3s linear;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rbga(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 5px 10px;
+    border-radius: 20%;
+}
+.icons a:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
