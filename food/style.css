@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Baskervville+SC&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Contrail+One&family=Fjalla+One&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Permanent+Marker&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&family=Staatliches&family=Work+Sans:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(238, 135, 0), #e6a060, rgb(214, 125, 24));
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.logo img {
+    width: 40%;
+    opacity: 70%;
+    animation: slideRight 1s ease forwards;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.about-img {
+    text-align: center;
+}
+
+.about-img img {
+    width: 40%;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    filter: drop-shadow(1px 1px 5px black);
+    animation: slideTop 1s ease forwards;
+
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li a {
+    display: block;
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 50%;
+    transition: all 0.1s ease;
+}
+
+.navbar li a:hover {
+    transform: scale(1.07) translateY(-5px);
+    cursor: pointer;
+}
+
+.head h1 {
+    position: relative;
+    left: 100px;
+    top: -550px;
+    z-index: -1;
+    font-size: 25rem;
+    width: 100%;
+    color: #fff;
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 20px;
+    opacity: 30%;
+    animation: slideLeft 1s ease forwards;
+}
+
+.icons {
+    position: relative;
+    top: -550px;
+    left: 1500px;
+
+}
+
+.icons i {
+    margin: 0 20px;
+    font-size: 35px;
+    color: #fff;
+    opacity: 55%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rbga(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 10px 15px;
+    border-radius: 10px;
+    animation: slideLeft 1s ease forwards;
+
+
+}
+
+.menu {
+    position: relative;
+    top: -580px;
+    left: 100px;
+}
+
+.menu a {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 25px;
+    color: #fff;
+    opacity: 55%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rbga(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 10px 15px;
+    border-radius: 10px;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    transition: all 0.1s ease;
+
+}
+
+.menu a:hover {
+    transform: scale(1.07) translateY(-5px);
+    cursor: pointer;
+}
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 60%;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
