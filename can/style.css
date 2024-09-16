@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(to right, #FFB75E, #ED8F03);
+
+    overflow-x: hidden;
+}
+
+.logo h1 {
+    margin-top: 30px;
+    font-family: "Bruno Ace SC", sans-serif;
+    letter-spacing: 5px;
+    font-size: 3rem;
+}
+
+header {
+    z-index: 10000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15%;
+}
+
+.navbar {
+    display: flex;
+    margin-top: 40px;
+}
+
+.navbar a {
+    display: block;
+    margin: 0 25px;
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #000;
+    transition: all 0.3s linear;
+}
+.navbar a:hover{
+    transform: scale(1.07) translate(-5px);
+}
+
+#menu {
+    color: #000;
+    position: relative;
+    margin-top: 4px;
+    font-size: 25px;
+    display: none;
+}
+
+
+section {
+    padding: 90px 17% 70px;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+}
+
+.about-img img {
+    position: relative;
+    top: 70px;
+    left: 100px;
+    width: 120%;
+    animation: moveUpDown 5s ease-in-out infinite;
+
+   
+}
+
+.about-head {
+    position: relative;
+    top: 70px;
+    right: 50px;
+}
+
+.about-head h1 {
+    font-size: 4rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    animation: slideleft 1s ease;
+    position: relative;
+    top: -30px;
+    
+}
+
+.about-head h1 span {
+    color: #ffff;
+
+}
+
+.about-head p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+   position: relative;
+   top: -20px;
+    margin-bottom: 20px;
+    color: #fff;  
+}
+
+.about-head a {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    background: #ED8F03;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+
+.btn {
+    margin: 0 20px;
+    color: #fff;
+}
+
+.custom-shape-divider-bottom-1724935378 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1724935378 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1724935378 .shape-fill {
+    fill: #FFFFFF;
+}
+
+@keyframes slidetop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideleft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@media (max-width: 575.98px) {
+    .logo h1 {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    header {
+        padding: 0 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .navbar p {
+        right: auto;
+        margin-top: 10px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    .head {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-img img {
+        top: 30px;
+        left: 0;
+        width: 80%;
+    }
+
+    .about-head {
+        top: 30px;
+        right: 0;
+    }
+
+    .about-head h1 {
+        font-size: 3rem;
+    }
+
+    .about-head p {
+        font-size: 16px;
+    }
+
+    .about-head a {
+        padding: 8px 12px;
+    }
+
+
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo h1 {
+        font-size: 2.4rem;
+    }
+
+    header {
+        padding: 0 10%;
+    }
+
+    .navbar a {
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    section {
+        padding: 80px 10%;
+    }
+
+    .head {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-img img {
+        top: 50px;
+        left: 0;
+        width: 90%;
+    }
+
+    .about-head {
+        top: 50px;
+        right: 0;
+    }
+
+    .about-head h1 {
+        font-size: 3rem;
+    }
+
+    .about-head p {
+        font-size: 16px;
+    }
+
+    .about-head a {
+        padding: 10px 15px;
+    }
+
+
+}
+@media (min-width: 992px) {
+    .logo h1 {
+        font-size: 3rem;
+    }
+
+    header {
+        padding: 0 15%;
+    }
+
+    .navbar a {
+        margin: 0 25px;
+        font-size: 20px;
+    }
+
+    section {
+        padding: 90px 17%;
+    }
+
+    .head {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-img img {
+        top: 70px;
+        left: 100px;
+        width: 100%;
+    }
+
+    .about-head {
+        top: 70px;
+        right: 50px;
+    }
+
+    .about-head h1 {
+        font-size: 5rem;
+    }
+
+    .about-head p {
+        font-size: 20px;
+    }
+
+    .about-head a {
+        padding: 10px 15px;
+    }
+    
+}
+@media(max-width:900px){
+    .logo h1 {
+        font-size: 2.4rem;
+    }
+
+    header {
+        padding: 0 10%;
+    }
+
+    .navbar a {
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    section {
+        padding: 80px 10%;
+    }
+
+    .head {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-img img {
+        top: 50px;
+        left: 0;
+        width: 90%;
+    }
+
+    .about-head {
+        top: 50px;
+        right: 0;
+    }
+
+    .about-head h1 {
+        font-size: 3rem;
+    }
+
+    .about-head p {
+        font-size: 16px;
+    }
+
+    .about-head a {
+        padding: 10px 15px;
+    }
+}
+@media(max-width:950px) {
+    #menu {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 20%;
+        right: -100%;
+        width: 220px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        backdrop-filter: blur(30px);
+        transition: all .7s ease;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 0;
+        margin: 15px 5px;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .navbar.open {
+        right: 0;
+    }
+}
+@media(max-width:400px){
+    .about-head h1{
+        font-size: 1.6rem;
+    }
+    .about-head a{
+        font-size: 15px;
+    }
+    .about-img img{
+        position: relative;
+      top: 70px;
+        width: 100%;
+    }
+    .logo h1{
+        font-size: 25px;
+    }
+    #menu{
+        font-size: 20px;
+    }
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
