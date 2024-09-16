@@ -1,0 +1,715 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: #f8ae1b;
+    overflow-x: hidden;
+
+}
+
+header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9%;
+    margin-top: 20px;
+
+}
+
+.logo img {
+    width: 160%;
+    height: auto;
+}
+
+
+#menu {
+    color: #fff;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.navbar {
+    display: flex;
+
+}
+
+.navbar li a {
+    position: relative;
+    color: #fff;
+    margin: 0 50px;
+    font-size: 25px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    bottom: -7px;
+    transition: 0.3s;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.navbar a:hover::before {
+    transform: scaleX(1);
+}
+
+section {
+    padding: 90px 9% 17px;
+}
+
+.head-img img {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.head {
+    width: 100%;
+    left: 1px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+}
+
+.heading h1 {
+    color: #fff;
+    font-size: 140px;
+    margin-bottom: 20px;
+    font-family: "Anton SC", sans-serif;
+
+}
+
+.heading p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+
+}
+
+.heading a {
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    transition: all 0.2s ease;
+    background: #d3cece;
+
+    transition: all 0.3s linear;
+}
+
+.heading a:hover {
+    transform: scale(1.07) translateY(-5px);
+}
+
+
+
+.icons {
+    display: flex;
+    position: absolute;
+    bottom: 1%;
+    right: 15%;
+}
+
+.icons a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 30px;
+    transition: all 0.3s linear;
+
+
+}
+
+.icons a:hover {
+    transform: rotateY(180deg);
+    cursor: pointer; 
+}
+
+.shoes-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.option-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option-text h1 {
+    font-size: 80px;
+    font-family: "Anton SC", sans-serif;
+    color: #fff;
+    font-weight: 600;
+}
+
+.option-text h4 {
+    color: #fff;
+    font-size: 25px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.about {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+}
+
+.shoes-text h1 {
+    color: #fff;
+    font-family: "Anton SC", sans-serif;
+    font-size: 120px;
+    margin-bottom: 20px;
+
+}
+
+.shoes-text p {
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.shoes-text a {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #d3cece;
+
+    transition: all 0.3s linear;
+}
+
+.shoes-text a:hover {
+    transform: scale(1.07) translateY(-5px);
+}
+
+.shoes-img img {
+    width: 80%;
+    box-shadow: 2px 2px 10px 4px rgba(14 55 54/15%);
+
+}
+
+
+.show-img img {
+    width: 60%;
+    height: auto;
+    filter: drop-shadow(black);
+    background: rgb(243, 239, 239);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.show-img img:hover {
+    transform: scale(1.07) translateY(-5px);
+    cursor: pointer;
+}
+
+.show-img {
+    width: 50%;
+
+    border-radius: 10px;
+    padding: 20px;
+    border-radius: 0.5rem;
+    background: #fff;
+
+}
+
+.show {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.show .show-img {
+    box-shadow: 2px 2px 10px 4px rgba(14 55 54/15%);
+}
+
+.show-img h1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 1.5rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+
+.show-text {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.show-text a {
+    color: black;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 10px;
+    background: rgb(243, 239, 239);
+    transition: all 0.3s linear;
+
+    font-weight: 400;
+}
+
+.show-text a:hover {
+    transform: scale(1.07) translateY(-5px);
+}
+
+.show-text span {
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.nike-text {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nike-text h1 {
+    color: #fff;
+    font-size: 100px;
+    font-family: "Anton SC", sans-serif;
+}
+
+.customer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.customer-img img {
+    width: 40%;
+    height: 30%;
+    border-radius: 7px;
+
+}
+
+.customer .customer-img {
+    box-shadow: 2px 2px 10px 4px rgba(14 55 54/15%);
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 25%;
+    height: auto;
+    transition: all 0.3s linear;
+
+}
+
+.customer .customer-img:hover {
+    transform: scale(1.07) translateY(-5px);
+    cursor: pointer;
+}
+
+
+.customer-icons i {
+    color: #fdc75c;
+    margin-bottom: 10px;
+}
+
+.customer-img p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+.customer-img h1 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.review h1 {
+    color: #fff;
+    font-family: "Anton SC", sans-serif;
+    font-size: 90px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.kids-img img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+
+    gap: 3rem;
+
+}
+
+.liberty {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+}
+
+.kids-heading h1 {
+    color: #fff;
+    font-size: 150px;
+    margin-bottom: 40px;
+    font-family: "Anton SC", sans-serif;
+}
+
+.kids-heading p {
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.kids-heading a {
+    display: inline-block;
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border: 1px solid transparent;
+    background: #d3cece;
+    padding: 10px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.kids-heading a:hover {
+    transform: scale(1.07) translateY(-5px);
+    cursor: pointer;
+}
+
+
+.kid-head h1 {
+    color: #fff;
+    font-family: "Anton SC", sans-serif;
+    font-size: 120px;
+    letter-spacing: 7px;
+}
+
+footer {
+    padding: 0 10%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-top p {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 15px;
+
+}
+
+.footer-box h4 {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+.footer-box p {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+.footer-box p:hover {
+    color: #ffe2a9;
+    cursor: pointer;
+}
+
+.footer-icons i {
+    color: #fff;
+    font-size: 30px;
+    transition: all 0.3s linear;
+    letter-spacing: 5px;
+}
+
+.footer-icons i:hover {
+    transform: scale(1.07) translateY(-5px);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f7b733;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+@media only screen and(min-width: 200px) and (max-width:1000px) {
+
+   
+
+    .heading h1 {
+        font-size: 5rem;
+    }
+
+    .heading P {
+        font-size: 1rem;
+    }
+
+    .heading a {
+        font-size: 1rem;
+    }
+
+    .option-text h1 {
+        font-size: 4rem;
+    }
+
+    .option-text h4 {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 20px;
+
+        width: 100%;
+        height: auto;
+    }
+
+    .kid-head h1 {
+        font-size: 5rem;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+    .kids-heading h1 {
+        font-size: 6rem;
+    }
+
+    .kids-heading p {
+        font-size: 1rem;
+    }
+
+    .kids-heading a {
+        font-size: 1rem;
+    }
+
+    .liberty {
+        grid-template-columns: 1fr;
+    }
+
+    .kids-img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media only screen and(min-width:350px) and (max-width:950px) {
+
+    .about {
+      flex-direction: column;
+    }
+
+    .shoes-text h1 {
+        font-size: 1px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .shoes-text p {
+        font-size: 1rem;
+        width: 90%;
+        height: auto;
+
+    }
+
+    .shoes-text a {
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .shoes-img img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .review h1 {
+        font-size: 4rem;
+    }
+
+    .customer {
+        display: block;
+    }
+
+    .customer-img img {
+        width: 40%;
+        height: auto;
+    }
+
+    .customer .customer-img {
+        margin-top: 20px;
+        width: 100%;
+        height: 30%;
+    }
+
+    .nike {
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media (max-width: 950px) {
+    .logo img {
+        width: 120%;
+        height: auto;
+    }
+
+
+    .head-img {
+        text-align: center;
+    }
+
+    .head-img img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .head {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    #menu {
+        display: block;
+        margin-right: 15px;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        flex-direction: column;
+        text-align: center;
+        background: #f8ae1b;
+        padding: 50px 20px;
+        gap: 10px;
+        display: block;
+    }
+
+    .navbar li a {
+        margin-left: 0;
+        display: block;
+        margin: 20px 0;
+    }
+
+    .navbar.open {
+        right: 0;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .icons {
+        bottom: -6%;
+        right: 6%;
+    }
+}
+
+@media (max-width: 800px) {
+
+
+
+    .show-img img {
+        width: 80%;
+        height: auto;
+
+        padding: 0 4%;
+
+    }
+
+    .show-img h1 {
+        left: 10px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .show-text a {
+        font-size: 1rem;
+    }
+
+    .show-text span {
+        font-size: 1rem;
+    }
+}
