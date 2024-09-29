@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #000; */
+
+}
+
+#back {
+    height: 100vh;
+    width: 100%;
+
+
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    /* background-color: #000000c4; */
+
+}
+
+#workingarea {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+   
+
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0;
+}
+
+#nav img {
+    height: 60px;
+}
+
+#nleft,
+#nright {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav a {
+    pointer-events: all;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+
+}
+
+#heroleft {
+    width: 50%;
+
+}
+
+#heroright {
+    min-width: 25%;
+
+}
+
+#heroleft .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+    font-family: "kajiro";
+    color: #FFF;
+    font-weight: 100;
+    font-size: 11vw;
+}
+
+/* logic hai idher mai */
+#heroleft .elem h1:nth-child(1) {
+    top: 0;
+}
+
+#heroleft .elem {
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+}
+
+#heroleft button {
+    pointer-events: all;
+    padding: .5vw 3vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family: "kajiro";
+}
+
+#heroright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17%;
+    color: #fff;
+
+}
+
+#heroright p {
+    text-align: right;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+#heroright #imagediv {
+    width: 100%;
+    height: 190px;
+    /* background-color: red; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://plus.unsplash.com/premium_photo-1683140621573-233422bfc7f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydHJpYXR8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#heroright p:nth-child(3) {
+    margin-bottom: 100px;
+}
