@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        .main-image img {
+            width: 20%;
+            border-radius: 10px;
+        }
+
+        .main-image {
+            text-transform: capitalize;
+            font-family: "General Sans";
+            display: flex;
+            gap: 5rem;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #fff;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rbga(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+        }
+
+        .main {
+            background-image: url('./model/pexels-vinh-ch-1599393606-27832783.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .main-head h1 {
+            font-size: 3rem;
+
+            position: relative;
+            bottom: 150px;
+        }
+
+        .card {
+            position: relative;
+            top: 40px;
+            cursor: pointer;
+
+        }
+
+        .card a {
+            font-size: 20px;
+
+            color: #000;
+
+            background-color: #fff;
+            padding: 10px 15px;
+            border-radius: 50px;
+        }
+
+        .price p {
+            font-size: 20px;
+        }
+
+        .main-head p {
+            font-size: 20px;
+            margin: 30px 0;
+        }
+
+        .rate {
+            color: #000;
+            cursor: pointer;
+
+        }
+
+        .rate i {
+            border: 1px solid #fff;
+            background-color: #fff;
+            font-size: 25px;
+            margin: 0 12px;
+        }
+
+        .rate a {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-image">
+            <img src="./model/pexels-vinh-ch-1599393606-27832783.jpg" alt="">
+
+            <div class="main-head">
+                <h1>Urban Enclave</h1>
+                <p>This stunning look features a flowy, knee-length A-line dress in a vibrant floral print</p>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-line"></i>
+                <div class="price">
+                    <p>$890.00</p>
+                </div>
+                <div class="rate">
+                    <i class="ri-add-line"> </i><a href="">1</a> <i class="ri-subtract-line"></i>
+                </div>
+                <div class="card">
+                    <a href="">Add to card</a>
+                    <a href=""> back</a>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+<!-- </html> <i class="ri-add-line" > 1</i> <i class="ri-subtract-line"></i> -->
