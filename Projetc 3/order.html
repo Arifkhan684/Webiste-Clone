@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        * {
+
+            font-family: "General Sans";
+        }
+
+        body {
+            background-color: #111;
+        }
+
+        .main {
+
+            display: flex;
+            
+            align-items: center;
+            margin-left: 50px;
+
+        }
+
+        .main img {
+            width: 50%;
+            margin-left: 10%;
+            border-radius: 10px;
+
+        }
+
+        .second h3 {
+            border-top: 1px solid #fff;
+            color: #fff;
+            font-size: 3vw;
+        }
+
+        .second p {
+            color: #fff;
+            max-width: 60%;
+            font-size: 1vw;
+        }
+
+        .footer-bottom i {
+            color: #fff;
+            font-size: 1vw;
+            margin: 0 10px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+
+        }
+
+        .second h4 {
+            color: #fff;
+            font-size: 2vw;
+        }
+
+        .footer-bottom p {
+            color: #fff;
+            font-size: 1vw;
+        }
+
+        .minu a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #9b8074;
+            padding: 1vw 2vw;
+            border-radius: 50px;
+            text-transform: capitalize;
+            font-size: 1vw;
+            position: absolute;
+            top: 10px;
+
+        }
+
+        .about {
+            display: flex;
+            padding: 10px;
+
+
+        }
+
+        .aboutmain {
+            display: flex;
+        }
+
+        .mainhero {
+            position: relative;
+            top: 50px;
+        }
+
+        .mainhero p {
+            color: #fff;
+            font-size: 1vw;
+        }
+
+        input {
+            outline: none;
+            color: #fff;
+            border: none;
+            background-color: #111;
+            width: 100%;
+            border-bottom: 1px solid #fff;
+        }
+
+        button {
+            color: #fff;
+            background-color: #9b8074;
+            border: navajowhite;
+            padding: 1vw 3vw;
+            border-radius: 50px;
+            margin-left: 20px;
+        }
+
+        select {
+            color: #fff;
+            border: none;
+            padding: 2vw 2vw;
+            background-color: #111;
+        }
+
+        @media (min-width: 1024px) and (max-width: 1366px) {
+            .main {
+                display: initial;
+            }
+
+            .main img {
+                margin-top: 100px;
+            }
+
+            input {
+                width: 50%;
+
+            }
+
+            .mainhero p {
+                font-size: 2vw;
+            }
+        }
+        @media (min-width: 320px) and (max-width: 480px){
+            .main {
+                display: initial;
+            }
+
+            .main img {
+                margin-top: 100px;
+            }
+
+            input {
+                width: 50%;
+
+            }
+
+            .mainhero p {
+                font-size: 3vw;
+            }
+            .minu a{
+                font-size: 3vw;
+            }
+            .second p{
+                font-size: 2vw;
+            }
+            .second h4{
+                font-size: 4vw;
+            }
+            .second h3
+            {
+                font-size: 5vw;
+            }
+            .main img{
+                width: 60%;
+            }
+            .footer-bottom p{
+                font-size: 2vw;
+            }
+            .footer-bottom i{
+                font-size: 3vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="minu">
+        <a href="./index.html">Back</a>
+    </div>
+    <div class="main">
+        <div class="mainhero">
+            <p>First name</p>
+            <input type="text">
+            <p>Last name</p>
+            <input type="text">
+
+
+
+            <p>Phone Number</p>
+            <input type="text">
+            <p>Flavour</p>
+            <select>
+                <option value="">select</option>
+                <option value="">Choco</option>
+                <option value="">Vanilla</option>
+                <option value="">Pumpkin Spice</option>
+            </select>
+
+
+            <button type="submit">Submit</button>
+
+        </div>
+        <div class="images">
+            <img src="./img/hero.png" alt="">
+        </div>
+    </div>
+    <div class="second">
+        <h3>Description</h3>
+        <p>Hop and Stroke is a vibrant and trendy restaurant that combines great food with an engaging atmosphere. Known
+            for its creative menu and lively setting, this restaurant offers a perfect blend of delicious cuisine and a
+            fun social environment. Whether you’re stopping by for a casual meal with friends or a special celebration,
+            Hop and Stroke creates a memorable experience for everyone.</p>
+        <h4>Contact : +1-234-567-8901.</h4>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Coffe & Donut . All rights reserved</p>
+        <i class="ri-instagram-line"></i>
+        <i class="ri-facebook-line"></i>
+        <i class="ri-twitter-x-line"></i>
+        <i class="ri-youtube-line"></i>
+    </div>
+
+
+</body>
+
+</html>

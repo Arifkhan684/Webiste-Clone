@@ -1,0 +1,884 @@
+@font-face {
+    font-family: "Montreal-Regular";
+    src: url("./fonts/Montreal-Regular.woff");
+}
+
+@font-face {
+    font-family: "Montreal-Bold";
+    src: url("./fonts/Montreal-Bold.woff");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "General Sans";
+    /* background-color: #111; */
+}
+
+
+#main {
+    background-color: #111;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+}
+
+.navbar {
+    display: flex;
+    gap: 3rem;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 20px;
+    font-family: "General Sans";
+    transition:  all .3s ease-in-out;
+
+}
+.navbar a:hover{
+    color: #9b8074;
+}
+
+.more a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.1vw;
+    font-family: "General Sans";
+    padding: 0.5vw 1vw;
+    background-color: #9b8074;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+}
+.more a:hover{
+    transform: scale(1.07) translateY(-5px);
+    
+}
+
+#menu-icon {
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+#first {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw 3vw;
+    font-family: "General Sans";
+
+}
+
+.about {
+    margin-left: 2vw;
+}
+
+.about p {
+    color: #fff;
+    font-size: 1vw;
+    text-transform: capitalize;
+    padding: 1vw;
+}
+
+.about h1 {
+    color: #fff;
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+
+.first-image img {
+    width: 90%;
+}
+
+.about-last {
+    display: flex;
+}
+
+.about-last a {
+    color: #fff;
+    margin-top: 10px;
+
+    padding: 0.5vw 1vw;
+    font-size: 1.1vw;
+    border-radius: 10px;
+    background-color: #9b8074;
+}
+
+.about-last p {
+    font-size: 1.1vw;
+
+}
+
+.scroll a {
+    font-family: "General Sans";
+    color: #fff;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    font-size: 15px;
+    gap: 0.5rem;
+
+}
+
+#herofooter {
+    width: 100%;
+    background-color: #111;
+    bottom: 3%;
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+#herofooter a {
+
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#second {
+
+    background-color: #111;
+    padding-top: 200px;
+    width: 100%;
+    height: 100%;
+    padding-right: 10vw;
+    color: #fff;
+   
+
+}
+
+.elem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 0;
+    padding: 3.5vw 3vw;
+    border-top: 1px solid #888;
+
+}
+
+.elem h1 {
+    opacity: .7;
+    text-transform: uppercase;
+    font-size: 7vw;
+}
+
+.elemlast {
+    width: 100%;
+}
+
+.elem img {
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#third {
+    padding: 8vw 6vw;
+}
+
+#third h1 {
+    color: #e6e6e6;
+    font-size: 5vw;
+    text-transform: capitalize;
+}
+
+#third h1 span {
+    color: transparent;
+    -webkit-text-stroke: 0.1px #fff;
+    font-family: "matter";
+}
+
+#third p {
+    color: #fff;
+    text-transform: capitalize;
+    max-width: 70%;
+    font-size: 1vw;
+    font-family: "Montreal-Regular";
+}
+
+.thirdmain {
+    color: #fff;
+    /* padding: 5vw 4vw; */
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+
+}
+
+.thirdimg img {
+    width: 60%;
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 1px #000);
+    margin-left: 15vw;
+}
+
+.thirdhead h2 {
+
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+    font-size: 2.5vw;
+}
+
+.thirdhead h4 {
+    margin-left: 5vw;
+    text-transform: capitalize;
+
+    margin-bottom: 1vw;
+
+}
+
+.thirdhead a {
+    color: #fff;
+    font-size: 1vw;
+}
+
+.thirdhead i {
+    color: #f89b29;
+}
+
+.thirdmore {
+    margin-top: 3vw;
+    text-align: center;
+}
+
+.tix {
+    padding: 1.3vw 2.5vw;
+    border-radius: 100px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 1vw;
+    letter-spacing: -1px;
+    border: none;
+}
+
+
+.thirdi img {
+    width: 65%;
+    border-radius: 10px;
+
+    margin-left: 4vw;
+}
+
+.kill h2 {
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+    font-size: 2.5vw;
+}
+
+.kill h4 {
+    margin-left: 5vw;
+    text-transform: capitalize;
+
+    margin-bottom: 1vw;
+}
+
+.kill a {
+    color: #fff;
+    font-size: 1vw;
+}
+
+.kill i {
+    color: #f89b29;
+
+}
+
+.kill h2 span {
+    color: transparent;
+    -webkit-text-stroke: 0.1px #fff;
+
+}
+
+.thirdhead h2 span {
+    color: transparent;
+    -webkit-text-stroke: 0.1px #fff;
+
+}
+
+#four {
+    background-color: #111;
+    width: 100%;
+    color: #fff;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 4vw 6vw;
+}
+
+#four h2 {
+    font-size: 6vw;
+}
+
+.fourmain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.fourmain img {
+
+    margin-top: 2vw;
+    width: 70%;
+    /* height: 50vh; */
+    border-radius: 20px;
+    position: relative;
+    top: -100px;
+
+}
+
+.nextimg img {
+    width: 70%;
+    margin-left: 5vw;
+    position: relative;
+    top: 70px;
+
+}
+
+.nextimg h1 {
+    font-size: 4vw;
+    position: relative;
+    bottom: 200px;
+    text-transform: uppercase;
+}
+
+.nextimg a {
+    font-size: 1vw;
+    position: relative;
+    bottom: 180px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 1vw 2vw;
+    border-radius: 100px;
+    background: #9b8074;
+}
+
+html,
+body {
+    position: relative;
+    height: 110%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    background-color: #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.fivehead {
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.fivehead input {
+    outline: none;
+    border-radius: 50px;
+    padding: 1vw 1vw;
+    width: 20%;
+    background-color: #111;
+    border: 1px solid #888;
+    color: #fff;
+    font-size: 1vw;
+
+}
+
+.fivehead button {
+    margin-left: 1vw;
+    outline: none;
+    background-color: #9b8074;
+    border: 1px solid transparent;
+    color: #fff;
+    padding: 0.5vw 0.8vw;
+    border-radius: 10px;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+#listfive li {
+    overflow: hidden;
+    /* Prevent content from overflowing */
+    overflow-wrap: break-word;
+    /* Break words if they exceed the container width */
+    white-space: normal;
+    /* Allow text to wrap */
+    position: relative;
+    color: #fff;
+    text-align: left;
+    /* Align text to the left */
+    margin-right: 0;
+    /* Remove excessive margin */
+    font-size: 16px;
+    /* Use a fixed font size */
+    padding: 12px 40px 12px 50px;
+    /* Consistent padding */
+    text-transform: capitalize;
+    user-select: none;
+    max-width: 100%;
+    /* Ensure the list item does not exceed its container width */
+    box-sizing: border-box;
+}
+
+ul li span {
+
+    position: absolute;
+    right: 10px;
+    /* Position the X 10px from the right */
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Center vertically */
+    height: 30px;
+    width: 30px;
+    font-size: 22px;
+    color: #e6e6e6;
+    line-height: 40px;
+    cursor: pointer;
+
+}
+
+ul li span:hover {
+    background-color: #edeef0;
+}
+
+
+#seven {
+    margin-top: 100px;
+    background-color: #111;
+}
+
+.footer-bottom {
+    padding-top: 5%;
+    border-top: 1px solid #888;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #fff;
+    padding: 5%;
+    font-family: "Montreal-Regular";
+    font-size: 1vw;
+}
+
+.footer-bottom i {
+    display: inline-block;
+    color: #fff;
+    margin: 0 20px;
+    font-size: 25px;
+    position: relative;
+    bottom: 90px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-bottom i:hover {
+    transform: scale(1.05) translateY(-5px);
+    cursor: pointer;
+}
+
+.footer img {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer h1 {
+    color: #fff;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    font-size: 4vw;
+}
+
+::-webkit-scrollbar {
+    width: 10%;
+}
+
+::-webkit-slider-thumb {
+    background-color: #9b8074;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #111;
+}
+
+.content a {
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 1vw 1.5vw;
+    border-radius: 100px;
+    background-color: #9b8074;
+    font-size: 1vw;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.content:hover {
+    opacity: 1;
+}
+
+@media(max-width:650px) {
+    #menu-icon {
+        display: block;
+    }
+
+    /* Hide the navbar by default */
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 80px;
+
+        right: 0;
+
+        padding: 10px;
+        width: 200px;
+        backdrop-filter: blur(30px);
+
+    }
+
+    /* Show the navbar when the 'open' class is added */
+    .navbar.open {
+        display: block;
+    }
+
+    .navbar a {
+        font-size: 15px;
+        display: block;
+        margin: 15px 5px;
+        padding: 0;
+
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .logo img {
+        width: 60%;
+    }
+
+    .navbar a {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+
+    .more a {
+        margin-right: 20px;
+    }
+
+    #herofooter a {
+        font-size: 15px;
+    }
+
+    .thirdmain {
+
+        display: block;
+    }
+
+    .thirdi img {
+        width: 50%;
+        /* text-align: center; */
+        text-align: center;
+    }
+
+    .thirdimg {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .thirdimg img {
+        width: 50%;
+        bottom: 20%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        position: absolute;
+
+    }
+
+    .tix {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .thirdhead {
+        position: relative;
+        top: 300px;
+    }
+
+    .fourmain img {
+        width: 60%;
+    }
+
+    .nextimg img {
+        width: 50%;
+        position: relative;
+        top: -10px;
+
+    }
+
+    .logo img {
+        width: 50%;
+    }
+
+    .footer-bottom i {
+        position: relative;
+        top: 1px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .thirdmain {
+        display: block;
+    }
+    .elem h1 {
+        opacity: .7;
+        text-transform: uppercase;
+        font-size: 9vw;
+    }
+    
+    .elemlast {
+        width: 100%;
+    }
+    
+    .elem img {
+    
+        opacity: 0;
+        pointer-events: none;
+        height: 150%;
+        z-index: 999;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    .thirdi img {
+        width: 50%;
+        text-align: center;
+    }
+
+    .thirdimg {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .thirdimg img {
+        width: 50%;
+        bottom: 120%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        position: absolute;
+    }
+
+    .logo img {
+        width: 50%;
+    }
+
+    .tix {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vw;
+    }
+
+    .thirdhead {
+        position: relative;
+        top: 150px;
+    }
+
+    .nextimg img {
+        width: 50%;
+        position: relative;
+        top: -25px;
+    }
+
+    .fourmain img {
+        width: 60%;
+        margin-top: 60px;
+    }
+
+    .nextimg h1 {
+        margin-top: 15%;
+    }
+
+    .nextimg a {
+        font-size: 2vw;
+    }
+
+    #third p {
+        font-size: 2vw;
+        position: relative;
+        top: 100px;
+    }
+
+    #third h1 {
+        font-size: 5.2vw;
+        position: relative;
+        top: 100px;
+    }
+
+    .five input {
+        width: 30%;
+        padding: 2vw 4vw;
+        font-size: 10px;
+    }
+
+    .fivehead button {
+        padding: 1vw 3vw;
+        font-size: 10px;
+    }
+
+    .footer img {
+        width: 12%;
+        position: relative;
+        right: 50px;
+    }
+
+    .footer-bottom i {
+        position: relative;
+        top: 20px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 3vw;
+    }
+
+    #herofooter {
+        width: 100%;
+        background-color: #111;
+        position: relative;
+        top: 50px;
+        /* padding: 0 2vw; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+
+    #herofooter a {
+        font-size: 2vw;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .more a {
+        font-size: 2vw;
+        margin-top: 10px;
+    }
+
+    .about p {
+        font-size: 1vw;
+    }
+
+    .about-last a {
+      font-size: 1vw;
+
+    }
+
+    .thirdhead a {
+        font-size: 2vw;
+    }
+
+    .kill a {
+        font-size: 2vw;
+    }
+
+    .about-last p {
+        position: relative;
+        top: 10px;
+        font-size: 1vw;
+    }
+
+    .first-image img {
+        width: 80%;
+        margin-left: 50px;
+    }
+    .swiper-slide img{
+        width: 100%;
+    }
+  
+}
+
+@media (max-width: 320px) {
+    .thirdimg img {
+        width: 50%;
+        bottom: 150%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        position: absolute;
+    }
+    
+}
